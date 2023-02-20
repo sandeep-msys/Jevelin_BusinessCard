@@ -1,0 +1,292 @@
+.Choices-container {
+    margin: 50% 3%;
+
+    .choice-title-container {
+        margin: auto;
+
+        .choice-title {
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 58px;
+        }
+
+        .choice-subtitle {
+            margin-top: 0%;
+            color: #7d7d7d;
+            font-size: 15px;
+            width: 85%;
+            // text-align: center;
+            margin: auto;
+        }
+    }
+
+    .choice-subscription-container {
+        margin: auto;
+        margin-top: 10%;
+
+        #startUpContainer {
+            visibility: hidden;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        #businessContainer {
+            visibility: hidden;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes slideToLeft {
+            0% {
+                transform: translateX(400px);
+            }
+
+            100% {
+                transform: translateX(0px);
+
+            }
+        }
+
+        .each-subscription-container {
+            margin: 10% auto;
+            background-color: #f7f6ff;
+            border-radius: 5px;
+            width: 89%;
+            padding: 10% 5%;
+
+            .subscription-about-container {
+                margin: auto;
+                text-align: start;
+                border-bottom: 1px solid #7d7d7d;
+
+                .subscription-heading {
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-bottom: 0%;
+                }
+
+                .subscription-price {
+                    margin: 0%;
+                    color: #2d1dff;
+                    font-size: 60px;
+                    font-weight: 300;
+                }
+
+                .subscription-matter {
+                    text-align: start;
+                    color: #9095a6;
+                    font-size: 16px;
+                    width: 96%;
+                }
+            }
+
+
+            .subscription-advantages-container {
+                margin-top: 15px;
+                width: 100%;
+                text-align: start;
+
+                .each-advantage {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .plus-icon {
+                        color: #7d7d7d;
+                        font-size: 20px;
+                        margin-right: 10px;
+                    }
+
+                    .advantage-heading {
+                        margin: 7px 3px;
+                    }
+                }
+
+                .pricing-button {
+                    padding: 6% 8%;
+                    margin-top: 20px;
+                    width: 150px;
+                    font-size: 14px;
+                    border: 1px solid #2d1dff;
+                    border-radius: 4px;
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .highlight {
+            border: 1px solid #2d1dff;
+            background-color: transparent;
+
+            .subscription-advantages-container {
+                .pricing-button {
+                    background-color: #2d1dff;
+                    color: white;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (min-width: 425px) {
+    .Choices-container {
+        margin-top: 10%;
+        .choice-subscription-container {
+            .each-subscription-container {
+                // width: 78%;
+                padding-left: 8%;
+
+                .subscription-advantages-container {
+                    .pricing-button {
+                        padding: 5% 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .Choices-container {
+        margin: auto;
+        margin-top: 15%;
+
+        .choice-title-container {
+            width: 60%;
+        }
+
+        .choice-subscription-container {
+            .each-subscription-container {
+                width: 80%;
+
+                .subscription-about-container {
+                    width: 60%;
+                    margin: auto;
+                }
+
+                .subscription-advantages-container {
+                    width: 60%;
+                    margin: auto;
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .Choices-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0%;
+        padding-top: 10%;
+// margin-top: 1%;
+// height: auto;
+        .choice-title-container {
+            width: 30%;
+
+            padding-left: 10px;
+            text-align: start;
+
+            .choice-subtitle {
+                margin: 0%;
+            }
+        }
+
+        .choice-subscription-container {
+            margin-top: 0%;
+            width: 67%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .each-subscription-container {
+                height: auto;
+                padding: 0%;
+                padding-left: 20px;
+                width: 45%;
+                // align-items: flex-start;
+                // justify-content: space-evenly;
+
+                .subscription-about-container {
+                    width: 90%;
+                }
+
+                .subscription-advantages-container {
+                    width: 90%;
+
+                }
+            }
+        }
+
+    }
+}
+
+
+@media only screen and (min-width:1366px) {
+    .Choices-container {
+        margin: 0% auto;
+
+        .choice-title-container {
+            width: 25%;
+
+            .choice-title {
+                font-size: 35px;
+                line-height: 40px;
+                font-weight: 400;
+            }
+        }
+
+        .choice-subscription-container {
+            width: 60%;
+            justify-content: space-evenly;
+
+            .each-subscription-container {
+                width: 42%;
+                height: auto;
+                padding-bottom: 5%;
+
+                .subscription-about-container {
+                    .subscription-heading {
+                        font-size: 20px;
+                    }
+
+                    .subscription-price {
+                        font-size: 50px;
+                        font-weight: 400;
+                    }
+
+                    .subscription-matter {
+                        font-size: 11px;
+                    }
+                }
+
+                .subscription-advantages-container {
+                    .each-advantage {
+                        .plus-icon {
+                            font-size: 14px;
+                        }
+
+                        .advantage-heading {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:1440px) {
+    .Choices-container{
+        .choice-subscription-container{
+            margin-top: 0%;
+        }
+    }
+}

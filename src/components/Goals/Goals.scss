@@ -1,0 +1,269 @@
+.Goals-container {
+    padding: 15% 3%;
+
+    .goal-slide-container {
+        padding: 7% 0%;
+        margin: auto;
+        width: 98%;
+        overflow: hidden;
+
+        #goalInstaImage {
+            visibility: hidden;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        #goalOfficeImage {
+            visibility: hidden;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(400px);
+            }
+
+            100% {
+                transform: translateX(0px);
+
+            }
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-400px);
+            }
+
+            100% {
+                transform: translateX(0px);
+
+            }
+        }
+
+        .goal-about-container {
+            text-align: center;
+
+            .goal-about-title {
+                margin: auto;
+                font-size: 40px;
+                color: #111111;
+                font-weight: 400;
+                width: 95%;
+                // margin: 0%;
+
+            }
+
+            .goal-about-subtitle {
+                font-size: 15px;
+                color: #7d7d7d;
+                line-height: 30px;
+                width: 90%;
+                margin: 5%;
+
+            }
+
+            .goal-count-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: auto;
+                width: 79%;
+
+                .each-goal-counter-container {
+                    // height: 25vh;
+                    margin-top: 8%;
+
+                    .each-goal-count {
+                        color: #2d1dff;
+                        font-size: 45px;
+                        margin-bottom: 10px;
+                        margin-top: 0%;
+                        font-weight: 400;
+
+                    }
+
+                    .each-goal-count-matter {
+                        font-size: 15px;
+                        color: #111111;
+                        margin: 0%;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .goal-button {
+                padding: 5% 7%;
+                border-radius: 4px;
+                border-color: transparent;
+                background-color: #2d1dff;
+                color: white;
+                font-size: 16px;
+
+            }
+
+        }
+
+        .goal-image-container {
+
+            padding: 10% 0%;
+
+            .goal-image {
+                border-radius: 12px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .Goals-container {
+        padding: 5% 3%;
+
+        .goal-slide-container {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Goals-container {
+        padding-top: 5%;
+
+        .goal-slide-container {
+            .goal-about-container {
+                width: 60%;
+                margin: auto;
+
+            }
+
+            .goal-image-container {
+                padding: 7% 0%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Goals-container {
+        padding: 10%;
+
+        .goal-slide-container {
+            width: 100%;
+            margin: 0%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .goal-about-container {
+                width: 30%;
+                margin: 0%;
+                height: auto;
+                text-align: start;
+
+                .goal-about-title {
+                    text-align: start;
+                    line-height: 45px;
+                    // margin: 0%;
+
+                }
+
+                .goal-about-subtitle {
+                    text-align: start;
+                    margin: 1%;
+                    width: 100%;
+                    margin-top: 9%;
+                }
+
+                .goal-count-container {
+                    margin: 0%;
+
+                }
+
+                .goal-button {
+                    margin-top: 5%;
+                }
+            }
+
+            .goal-image-container {
+                width: 65%;
+                padding: 0%;
+            }
+        }
+
+        .reverse {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .goal-about-container {
+                height: 40vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .Goals-container {
+        padding: 10%;
+
+        .goal-slide-container {
+            padding: 0%;
+            height: 70vh;
+
+            .goal-about-container {
+                margin: auto;
+                height: 70%;
+                font-size: 30px;
+
+                .goal-about-title {
+                    font-size: 1em;
+                }
+
+                .goal-about-subtitle {
+                    width: 78%;
+                    font-size: 0.45em;
+                    line-height: 20px;
+                }
+
+                .goal-count-container {
+
+                    width: 65%;
+
+                    .each-goal-counter-container {
+                        .each-goal-count {
+                            font-size: 1.2em;
+                        }
+                    }
+
+                }
+
+                .goal-button {
+                    font-size: 13px;
+                }
+
+            }
+
+            .goal-image-container {
+                padding: 5% 0%;
+                width: 50%;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .Goals-container {
+        padding: 10%;
+
+        .goal-slide-container {
+            height: 50vh;
+
+            .goal-about-container {
+                height: 35vh;
+            }
+        }
+    }
+}

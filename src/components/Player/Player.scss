@@ -1,0 +1,69 @@
+.Player-container {
+    background-position: center center;
+    background-size: cover;
+    background-image: url('https://jevelin.shufflehound.com/business/wp-content/uploads/sites/39/2019/11/Rectangle-532-copy.jpg?id=11');
+    padding: 55% 0%;
+
+    .player-title-container {
+
+        color: white;
+
+        .play-icon {
+            // margin: auto;
+            cursor: pointer;
+            font-size: 80px;
+        }
+
+        .player-title {
+            // margin: auto;
+
+            font-size: 48px;
+            font-weight: 300;
+            line-height: 50px;
+        }
+
+        .player-subtitle {
+            margin: auto;
+
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .Player-container {
+        padding: 20% 0%;
+
+        .player-title-container {
+            margin: auto;
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .Player-container {
+        .player-title-container {
+            margin: auto;
+            width: 50%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .Player-container {
+        padding: 8% 0%;
+
+        .player-title-container {
+            width: 35%;
+
+            .player-title {
+                font-size: 33px;
+            }
+
+            .player-subtitle {
+                font-size: 15px;
+            }
+        }
+    }
+}
